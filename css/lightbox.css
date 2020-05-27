@@ -3,6 +3,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .row {
+    height: 100%;
+  }
   
   .row:after {
     content: "";
@@ -42,11 +46,14 @@
   .close {
     color: white;
     position: absolute;
-    top: 3%;
-    right: 3%;
+    background-color: #000;
+    opacity: 0.5;
+    right: 0%;
     font-size: 50px;
     font-weight: bold;
     z-index: 1;
+    width: 5%;
+    text-align: center;
   }
   
   .close:hover,
