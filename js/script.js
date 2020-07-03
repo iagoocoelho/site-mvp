@@ -4,8 +4,13 @@ $(document).ready(function() {
         class: 'grey-rectangle',
     }).appendTo('section#services .container');
     $(".grey-rectangle").addClass("fixed");
-});
 
+    $('#redirect #mvp-link').click(function (e){
+        e.preventDefault();
+        $('#redirect').hide();
+    });
+
+});
 
 // RESPONSIVE PHONE MENU
 $('.menu-toggle').click(function() {
@@ -19,7 +24,6 @@ $('.close-menu').click(function() {
     $('ul').removeClass('opening');
     $('.menu-toggle').removeClass('open');
 });
-
 
 // GameLab1 EXPAND & COMPRESS
 

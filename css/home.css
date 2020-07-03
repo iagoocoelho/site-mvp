@@ -6,6 +6,44 @@ html {
 
 body {
   background-color: #171717; }
+  body #redirect {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 9999;
+    padding-top: 100px;
+    background-color: #222222e5; }
+    @media (max-width: 1024px) {
+      body #redirect {
+        padding-top: 200px; } }
+    body #redirect a {
+      filter: brightness(0.5); }
+      body #redirect a img {
+        width: 320px; }
+        body #redirect a img#mvp-link {
+          margin-right: 20px; }
+        @media (max-width: 1024px) {
+          body #redirect a img {
+            display: none; } }
+      body #redirect a.mobile {
+        display: none; }
+        @media (max-width: 1024px) {
+          body #redirect a.mobile {
+            display: flex;
+            width: 80%;
+            height: 50px;
+            margin: 20px auto;
+            align-items: center;
+            justify-content: center;
+            background-color: #171717;
+            color: #FFFFFF;
+            border: 1px solid #44d0ff;
+            text-decoration: none;
+            font-size: 18px;
+            max-width: 300px; } }
+      body #redirect a:hover {
+        filter: brightness(1); }
   @media (max-width: 768px) {
     body .fixed {
       display: none; } }
